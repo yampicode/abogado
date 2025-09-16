@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="es-ve">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, shrink-to-fit=no">
+  <meta name="theme-color" content="#1a237e">
+
+  <!-- Apple -->
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <meta name="apple-mobile-web-app-title" content="Abogado: Servicio jurídico profesional.">
+  <meta name="format-detection" content="telephone=no, address=no, email=no">
+  <link rel="apple-touch-icon" href="/abogado.png" sizes="180x180">
+  <link rel="apple-touch-startup-image" href="https:abogado.vercel.app/abogado.png">
+
+  <!-- Meta tags para SEO -->
+  <title>Génesis - Servicios Jurídicos Profesionales</title>
+  <meta name="description" content="Abogado: Servicios jurídicos integrales. Derecho civil, penal, laboral, mercantil y familia. Asesoramiento legal profesional y representación en juicios.">
+  <meta name="keywords" content="abogado, servicios legales, derecho civil, derecho penal, derecho laboral, derecho mercantil, derecho familia, asesoría jurídica, bufete abogados">
+  <meta name="author" content="Yampiero Mujica">
+  <meta name="robots" content="index, follow">
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://abogado.vercel.app/">
+  <meta property="og:title" content="Bufete Legal Martínez - Servicios Jurídicos Profesionales">
+  <meta property="og:description" content="Servicios jurídicos integrales. Asesoramiento legal profesional y representación in juicios.">
+  <meta property="og:image" content="https://abogado.vercel.app/abogado.png">
+
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:url" content="https://abogado.vercel.app/">
+  <meta property="twitter:title" content="Abogado - Servicios Jurídicos Profesionales">
+  <meta property="twitter:description" content="Servicios jurídicos integrales. Asesoramiento legal profesional y representación in juicios.">
+  <meta property="twitter:image" content="https://abogado.vercel.app/abogado.png">
+
+
+  <link rel="shortcut icon" type="image/x-icon" href="abogado.png">
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="styles.css">
+
+  <!-- W3.CSS -->
+  <link rel="stylesheet" href="w3schools.min.css">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Source+Serif+Pro:wght@300;400;600&display=swap" rel="stylesheet">
+
+<script defer src="main.js" type="text/javascript" charset="utf-8"></script>
+</head>
+<body class="w3-light-grey">
+ 
+  <!-- Navbar -->
+  <div class="w3-top navbar">
+    <div class="w3-bar w3-white w3-padding">
+      <a href="#" class="w3-bar-item w3-button logo primary-text">Abg. Génesis</a>
+      <!-- Right-sided navbar -->
+      <div class="w3-right w3-hide-small">
+        <a href="#about" class="w3-bar-item w3-button">Acerca de mí</a>
+        <a href="#services" class="w3-bar-item w3-button">Servicios</a>
+        
+
+        <a href="#testimonials" class="w3-bar-item w3-button">Opiniones</a>
+        <a href="#contact" class="w3-bar-item w3-button">Contacto</a><a href="#ubicacion" class="w3-bar-item w3-button">Ubicación</a>
+      </div>
+      <!-- CORRECCIÓN: Menú hamburguesa alineado correctamente -->
+      <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()" style="display: flex; align-items: center; height: 44px;">
+        <i class="fa fa-bars"></i>
+      </a>
+    </div>
+  </div>
+
+  <!-- Sidebar on small screens -->
+  <nav class="w3-sidebar w3-bar-block w3-white w3-animate-left w3-hide-medium w3-hide-large" style="display:none; z-index:101" id="mySidebar">
+    <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">×</a>
+    <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button">Acerca de mí</a>
+    <a href="#services" onclick="w3_close()" class="w3-bar-item w3-button">Servicios</a>
+    <a href="#testimonials" onclick="w3_close()" class="w3-bar-item w3-button">Opiniones</a>
+    <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button">Contacto</a>
+    <a href="#ubicacion" onclick="w3_close()" class="w3-bar-item w3-button">Ubicación</a>
+  </nav>
+
+  <!-- Hero Section -->
+  <header class="hero-section w3-display-container" id="home">
+    <div class="w3-display-middle w3-text-white w3-center hero-content">
+      <h1 class="w3-xxxlarge animate-fadeIn" style="animation-delay: 0.2s;">Génesis</h1>
+      <p class="w3-xlarge animate-fadeIn" style="animation-delay: 0.5s;">
+        Soluciones jurídicas con excelencia y compromiso
+      </p>
+      <p class="w3-large animate-fadeIn" style="animation-delay: 0.8s;">
+        Derecho Civil, Penal, Laboral, Mercantil y Familia
+      </p>
+      <a href="#contact" class="w3-button primary-bg w3-large w3-margin-top animate-fadeIn" style="animation-delay: 1s;">
+        <i class="fa fa-calendar-check-o"></i> Consulta Gratuita
+      </a>
+    </div>
+  </header>
+  
+  <!-- About Section -->
+  <section class="w3-container w3-padding-64" id="about">
+    <div class="w3-row">
+      <div class="w3-col m6">
+        <img src="https://images.unsplash.com/photo-1589829545856-d10d557cf95f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=872&q=80" alt="Nuestro bufete de abogados" class="w3-image" style="border-radius: 4px;">
+      </div>
+      <div class="w3-col m6 w3-padding-large">
+        <h2 class="section-title">Acerca de mí</h2>
+        <p class="w3-large">
+          Desde 2008, ofrezco servicios jurídicos de excelencia con un enfoque personalizado y cercano.
+        </p>
+        <p>
+          En Bufete Martínez combinamos la tradición jurídica con los conocimientos más actuales para ofrecer a nuestros clientes soluciones legales efectivas y creativas.
+        </p>
+
+        <h4 class="w3-margin-top">Nuestros Valores</h4>
+        <div class="value-item">
+          <h5>Excelencia Profesional</h5>
+          <p>
+            Formación continua y especialización en cada área del derecho.
+          </p>
+        </div>
+        <div class="value-item">
+          <h5>Compromiso con el Cliente</h5>
+          <p>
+            Asesoramiento personalizado y seguimiento exhaustivo de cada caso.
+          </p>
+        </div>
+        <div class="value-item">
+          <h5>Confidencialidad Absoluta</h5>
+          <p>
+            Toda la información de nuestros clientes es tratada con máxima discreción.
+          </p>
+        </div>
+
+        <a href="#contact" class="w3-button primary-bg w3-margin-top">
+          <i class="fa fa-calendar"></i> Solicitar Consulta
+        </a>
+      </div>
+    </div>
+  </section>
+  
+
+  <!-- Services Section -->
+  <section class="w3-container w3-padding-64" id="services">
+    <div class="w3-center">
+      <h2 class="section-title">Nuestros Servicios Legales</h2>
+      <p class="w3-large">
+        Ofrecemos asesoramiento jurídico especializado en todas las áreas del derecho
+      </p>
+    </div>
+
+    <div class="w3-row-padding w3-margin-top">
+      <div class="w3-third">
+        <div class="w3-card-4 w3-white service-card">
+          <div class="w3-container w3-center w3-padding-16">
+            <i class="fas fa-balance-scale legal-icon"></i>
+            <h3>Derecho Civil</h3>
+            <p>
+              Contratos, reclamaciones de deuda, responsabilidad civil, derechos reales y sucesiones.
+            </p>
+            <ul class="w3-ul w3-left-align">
+              <li>Contratación y obligaciones</li>
+              <li>Ley de propiedad horizontal</li>
+              <li>Derecho de sucesiones</li>
+              <li>Responsabilidad contractual y extracontractual</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-third">
+        <div class="w3-card-4 w3-white service-card">
+          <div class="w3-container w3-center w3-padding-16">
+            <i class="fas fa-gavel legal-icon"></i>
+            <h3>Derecho Penal</h3>
+            <p>
+              Defensa y acusación particular en procedimientos penales de toda índole.
+            </p>
+            <ul class="w3-ul w3-left-align">
+              <li>Delitos económicos y societarios</li>
+              <li>Delitos contra las personas</li>
+              <li>Delitos contra el patrimonio</li>
+              <li>Procedimientos de menores</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-third">
+        <div class="w3-card-4 w3-white service-card">
+          <div class="w3-container w3-center w3-padding-16">
+            <i class="fas fa-briefcase legal-icon"></i>
+            <h3>Derecho Laboral</h3>
+            <p>
+              Asesoramiento a empresas y trabajadores en materia de empleo y Seguridad Social.
+            </p>
+            <ul class="w3-ul w3-left-align">
+              <li>Despidos y reclamaciones</li>
+              <li>Contratos de trabajo</li>
+              <li>Enfermedades profesionales y accidentes laborales</li>
+              <li>Derecho sindical y negociación colectiva</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="w3-row-padding w3-margin-top">
+      <div class="w3-third">
+        <div class="w3-card-4 w3-white service-card">
+          <div class="w3-container w3-center w3-padding-16">
+            <i class="fas fa-landmark legal-icon"></i>
+            <h3>Derecho Mercantil</h3>
+            <p>
+              Constitución de empresas, fusiones, adquisiciones y derecho concursal.
+            </p>
+            <ul class="w3-ul w3-left-align">
+              <li>Constitución de sociedades</li>
+              <li>Derecho contractual mercantil</li>
+              <li>Propiedad intelectual e industrial</li>
+              <li>Concurso de acreedores</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-third">
+        <div class="w3-card-4 w3-white service-card">
+          <div class="w3-container w3-center w3-padding-16">
+            <i class="fas fa-home legal-icon"></i>
+            <h3>Derecho de Familia</h3>
+            <p>
+              Separaciones, divorcios, custodias, pensiones y derecho de sucesiones.
+            </p>
+            <ul class="w3-ul w3-left-align">
+              <li>Divorcios y separaciones</li>
+              <li>Régimen de visitas y custodias</li>
+              <li>Pensiones alimenticias</li>
+              <li>Patria potestad y tutelas</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-third">
+        <div class="w3-card-4 w3-white service-card">
+          <div class="w3-container w3-center w3-padding-16">
+            <i class="fas fa-building legal-icon"></i>
+            <h3>Derecho Administrativo</h3>
+            <p>
+              Procedimientos ante la Administración Pública y recursos contencioso-administrativos.
+            </p>
+            <ul class="w3-ul w3-left-align">
+              <li>Procedimientos administrativos</li>
+              <li>Expropiaciones forzosas</li>
+              <li>Licencias urbanísticas</li>
+              <li>Recursos contencioso-administrativos</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Stats Section -->
+  <section class="w3-container w3-padding-64 primary-bg">
+    <div class="w3-row-padding w3-center">
+      <div class="w3-col m3 w3-margin-bottom">
+        <div class="w3-card w3-padding-24 w3-white">
+          <div class="stats-number">
+            15+
+          </div>
+          <p>
+            Años de Experiencia
+          </p>
+        </div>
+      </div>
+      <div class="w3-col m3 w3-margin-bottom">
+        <div class="w3-card w3-padding-24 w3-white">
+          <div class="stats-number">
+            1200+
+          </div>
+          <p>
+            Casos Resueltos
+          </p>
+        </div>
+      </div>
+      <div class="w3-col m3 w3-margin-bottom">
+        <div class="w3-card w3-padding-24 w3-white">
+          <div class="stats-number">
+            98%
+          </div>
+          <p>
+            Casos Exitosos
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Testimonials Section -->
+  <section class="w3-container w3-padding-64" id="testimonials">
+    <div class="w3-center">
+      <h2 class="section-title">Opiniones de Clientes</h2>
+      <p class="w3-large">
+        Lo que dicen nuestros clientes sobre nuestros servicios
+      </p>
+    </div>
+
+    <div class="w3-row-padding w3-margin-top">
+      <div class="w3-col l4 m6 w3-margin-bottom">
+        <div class="w3-card-4 w3-padding testimonial-card">
+          <div class="w3-container">
+            <p>
+              <i class="fa fa-quote-left primary-text"></i> Excelente servicio en mi proceso de divorcio. La abogada Elena fue sumamente profesional y empática en todo momento. Resolvió todo de manera eficiente.
+            </p>
+            <div class="w3-row w3-margin-top">
+              <div class="w3-col s4">
+                <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=388&q=80" alt="María" class="w3-image w3-circle" style="width:60px">
+              </div>
+              <div class="w3-col s8">
+                <h4>María González</h4>
+                <p>
+                  <i class="fa fa-star primary-text"></i><i class="fa fa-star primary-text"></i><i class="fa fa-star primary-text"></i><i class="fa fa-star primary-text"></i><i class="fa fa-star primary-text"></i>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-col l4 m6 w3-margin-bottom">
+        <div class="w3-card-4 w3-padding testimonial-card">
+          <div class="w3-container">
+            <p>
+              <i class="fa fa-quote-left primary-text"></i> Contraté sus servicios para un tema laboral y quedé muy satisfecho. Resolvieron mi caso con rapidez y profesionalidad. Los recomiendo totalmente.
+            </p>
+            <div class="w3-row w3-margin-top">
+              <div class="w3-col s4">
+                <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=774&q=80" alt="Roberto" class="w3-image w3-circle" style="width:60px">
+              </div>
+              <div class="w3-col s8">
+                <h4>Roberto Sánchez</h4>
+                <p>
+                  <i class="fa fa-star primary-text"></i><i class="fa fa-star primary-text"></i><i class="fa fa-star primary-text"></i><i class="fa fa-star primary-text"></i><i class="fa fa-star primary-text"></i>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="w3-col l4 m6 w3-margin-bottom">
+        <div class="w3-card-4 w3-padding testimonial-card">
+          <div class="w3-container">
+            <p>
+              <i class="fa fa-quote-left primary-text"></i> Necesitaba asesoramiento para la constitución de mi empresa y me guiaron perfectamente en todo el proceso. Muy profesionales y cercanos.
+            </p>
+            <div class="w3-row w3-margin-top">
+              <div class="w3-col s4">
+                <img src="https://images.unsplash.com/photo-1554151228-14d9def656e4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=386&q=80" alt="Ana" class="w3-image w3-circle" style="width:60px">
+              </div>
+              <div class="w3-col s8">
+                <h4>Ana Torres</h4>
+                <p>
+                  <i class="fa fa-star primary-text"></i><i class="fa fa-star primary-text"></i><i class="fa fa-star primary-text"></i><i class="fa fa-star primary-text"></i><i class="fa fa-star primary-text"></i>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="w3-container w3-padding-64 primary-bg" id="contact">
+    <div class="w3-center">
+      <h2 class="section-title w3-text-white">Contacto</h2>
+      <p class="w3-large w3-text-white">
+        Solicite una consulta gratuita con nuestros abogados
+      </p>
+    </div>
+
+    <div class="w3-row w3-padding-32">
+      <div class="w3-col m6">
+        <form id="contactForm" onsubmit="sendWhatsAppMessage(); return false;">
+          <div class="w3-section">
+            <label for="name" class="w3-text-white">Nombre</label>
+            <input class="w3-input w3-border" type="text" id="name" name="name" required>
+          </div>
+          <div class="w3-section">
+            <label for="phone" class="w3-text-white">Teléfono</label>
+            <input class="w3-input w3-border" type="tel" id="phone" name="phone" required>
+          </div>
+          <div class="w3-section">
+            <label for="service" class="w3-text-white">Área de interés</label>
+            <select class="w3-input w3-border" id="service" name="service" required>
+              <option value="">Seleccione un área</option>
+              <option value="Derecho Civil">Derecho Civil</option>
+              <option value="Derecho Penal">Derecho Penal</option>
+              <option value="Derecho Laboral">Derecho Laboral</option>
+              <option value="Derecho Mercantil">Derecho Mercantil</option>
+              <option value="Derecho de Familia">Derecho de Familia</option>
+              <option value="Derecho Administrativo">Derecho Administrativo</option>
+              <option value="Otro">Otro área</option>
+            </select>
+          </div>
+          <div class="w3-section">
+            <label for="message" class="w3-text-white">Breve descripción de su caso</label>
+            <textarea class="w3-input w3-border" id="message" name="message" rows="4"></textarea>
+          </div>
+          <button type="submit" class="w3-button w3-white w3-block w3-text-dark-grey">
+            <i class="fa fa-paper-plane"></i> Enviar por WhatsApp
+          </button>
+        </form>
+      </div>
+    
+      </section>
+      <section class="w3-padding-64  w3-col m6 w3-container ubicacion" id="ubicacion">
+        <h2 class="section-title w3-center">Ubicación</h2>
+        
+        <div class="w3-large ">
+          <p>
+            <i class="fa fa-map-marker"></i> Avenida de la Justicia 123, Madrid
+          </p>
+          <p>
+            <i class="fa fa-phone"></i> +34 91 123 45 67
+          </p>
+          <p>
+            <i class="fa fa-envelope"></i> info@bufetemartinez.com
+          </p>
+          <p>
+            <i class="fa fa-clock-o"></i> Lunes a Viernes: 9:00 - 19:00
+          </p>
+          <p>
+            <i class="fa fa-clock-o"></i> Sábados: 10:00 - 14:00 (solo con cita)
+          </p>
+        </div>
+        <div class="w3-margin-top">
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3037.47531799754!2d-3.703790384603785!3d40.41962997936466!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd42287e23931ee7%3A0x2e4ef2e90ebcb52f!2sPuerta%20del%20Sol!5e0!3m2!1ses!2ses!4v1633512361654!5m2!1ses!2ses" width="100%" height="250" style="border:0; border-radius: 4px;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="w3-center w3-padding-32 w3-dark-grey">
+    <div class="w3-container">
+      <div class="w3-row">
+        <div class="w3-col m4">
+          <h3>Abg. Génesis</h3>
+          <p>
+            Soluciones jurídicas con excelencia y compromiso
+          </p>
+        </div>
+        <div class="w3-col m4">
+          <h3>Enlaces Rápidos</h3>
+          <p>
+            <a href="#about" class="w3-text-light-grey" style="text-decoration: none;">Acerca de mí</a>
+          </p>
+          <p>
+            <a href="#services" class="w3-text-light-grey" style="text-decoration: none;">Servicios</a>
+          </p>
+          
+          <p>
+            <a href="#contact" class="w3-text-light-grey" style="text-decoration: none;">Contacto</a>
+          </p>
+          <p>
+            <a href="#ubicacion" class="w3-text-light-grey" style="text-decoration: none;">Ubicación</a>
+          </p>
+        </div>
+        <div class="w3-col m4">
+          <h3>Síguenos</h3>
+          <!-- CORRECCIÓN: Iconos en horizontal -->
+          <div class="footer-social">
+            <a href="#" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <p class="w3-margin-top">
+      © 2025 Abg. Génesis. Todos los derechos reservados.
+    </p>
+    <p>
+      Desarrollado por Yampiero Mujica - WEBZONA
+    </p>
+  </footer>
+
+  <!-- WhatsApp Float Button -->
+  <a href="https://api.whatsapp.com/send?phone=34911234567&text=Hola,%20me%20interesan%20sus%20servicios%20jurídicos" class="whatsapp-float" target="_blank">
+    <i class="fab fa-whatsapp"></i>
+  </a>
+
+  
+</body>
+</html>

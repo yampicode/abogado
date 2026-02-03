@@ -17,7 +17,7 @@
 
       const text = `Hola, me llamo ${name}. Me interesa el servicio de: ${service}. ${message}. Mi teléfono es: ${phone}`;
       const encodedText = encodeURIComponent(text);
-      window.open(`https://api.whatsapp.com/send?phone=34911234567&text=${encodedText}`, '_blank');
+      window.open(`https://api.whatsapp.com/send?phone=584120348988&text=${encodedText}`, '_blank');
 
       // Reset form
       document.getElementById('contactForm').reset();
